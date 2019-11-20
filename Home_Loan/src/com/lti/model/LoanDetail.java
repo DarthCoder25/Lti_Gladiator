@@ -2,8 +2,14 @@ package com.lti.model;
 
 import java.time.LocalDate;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
+@Entity
 public class LoanDetail {
 
+	@Id @GeneratedValue
 	private String applicationId;
 	private String userId;
 	private double interestRate;

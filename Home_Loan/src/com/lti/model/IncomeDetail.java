@@ -1,7 +1,13 @@
 package com.lti.model;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
+@Entity 
 public class IncomeDetail {
 
+	@Id @GeneratedValue
 	private String userId;
 	private String typeOfEmployment;
 	

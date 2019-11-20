@@ -1,7 +1,13 @@
 package com.lti.model;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
+@Entity 
 public class BankDetail {
 
+	@Id @GeneratedValue
 	private String userId;
 	private String bankName;
 	private String ifsc;
@@ -10,7 +16,7 @@ public class BankDetail {
 	private int accountNumber;
 	public BankDetail() {
 		super();
-		System.out.println("hello");
+		
 		
 	}
 	public BankDetail(String userId, String bankName, String ifsc, String accountHolderName, String accountType,
