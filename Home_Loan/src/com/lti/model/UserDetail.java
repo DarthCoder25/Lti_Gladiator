@@ -15,7 +15,7 @@ public class UserDetail {
 	private LocalDate dob;
 	private String gender;
 	private String residentType;
-	private String aadharNumber;
+	private int aadharNumber;
 	private String panNumber; 
 	
 	
@@ -26,7 +26,7 @@ public class UserDetail {
 
 
 	public UserDetail(String userId, String firstName, String middleName, String lastName, String emailId,
-			String password, String phoneno, LocalDate dob, String gender, String residentType, String aadharNumber, String panNumber) {
+			String password, String phoneno, LocalDate dob, String gender, String residentType, int aadharNumber, String panNumber) {
 		super();
 		this.userId = userId;
 		this.firstName = firstName;
@@ -164,12 +164,12 @@ public class UserDetail {
 	
 
 
-	public String getAadharNumber() {
+	public int getAadharNumber() {
 		return aadharNumber;
 	}
 
 
-	public void setAadharNumber(String aadharNumber) {
+	public void setAadharNumber(int aadharNumber) {
 		this.aadharNumber = aadharNumber;
 	}
 
