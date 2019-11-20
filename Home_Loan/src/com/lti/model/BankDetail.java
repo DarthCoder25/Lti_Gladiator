@@ -10,6 +10,7 @@ public class BankDetail {
 	private int accountNumber;
 	public BankDetail() {
 		super();
+		System.out.println("hello");
 		
 	}
 	public BankDetail(String userId, String bankName, String ifsc, String accountHolderName, String accountType,
