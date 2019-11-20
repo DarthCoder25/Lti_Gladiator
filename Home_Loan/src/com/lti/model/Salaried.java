@@ -1,8 +1,11 @@
 package com.lti.model;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.OneToOne;
 
 @Entity 
 public class Salaried {
@@ -13,7 +16,11 @@ public class Salaried {
 	private int retirementAge;
 	private String organizationType;
 	private String employerName;
-	private String userId;
+	
+	@OneToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+	private UserDetail userId;
+	
+	@OneToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     private String typeOfEmployment;
 	
     

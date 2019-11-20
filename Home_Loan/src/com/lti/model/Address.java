@@ -7,7 +7,8 @@ import javax.persistence.Id;
 @Entity
 public class Address {
 	
-	@Id @GeneratedValue
+	@Id 
+	@GeneratedValue
 	private String userId;
 	private String address1;
 	private String address2;
@@ -15,6 +16,9 @@ public class Address {
 	private String state;
 	private String city;
 	private int pin;
+	
+	
+	
 	
 	public Address() 
 	{

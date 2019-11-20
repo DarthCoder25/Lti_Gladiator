@@ -11,7 +11,12 @@ import javax.persistence.Id;
 public class UserDetail {
 	
 	@Id 
+
+
+	@GeneratedValue
+
 	private String userId;
+
 	private String firstName;
 	private String middleName;
 	private String lastName;
@@ -23,6 +28,8 @@ public class UserDetail {
 	private String residentType;
 	private int aadharNumber;
 	private String panNumber; 
+	
+	
 	
 	
 	public UserDetail() 
