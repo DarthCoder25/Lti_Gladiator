@@ -10,7 +10,7 @@ import javax.persistence.Id;
 @Entity
 public class UserDetail {
 	
-	@Id @GeneratedValue
+	@Id 
 	private String userId;
 	private String firstName;
 	private String middleName;
@@ -18,7 +18,7 @@ public class UserDetail {
 	private String emailId;
 	private String password;
 	private String phoneno;
-	private LocalDate dob;
+	private String dob;
 	private String gender;
 	private String residentType;
 	private int aadharNumber;
@@ -32,7 +32,7 @@ public class UserDetail {
 
 
 	public UserDetail(String userId, String firstName, String middleName, String lastName, String emailId,
-			String password, String phoneno, LocalDate dob, String gender, String residentType, int aadharNumber, String panNumber) {
+			String password, String phoneno, String dob, String gender, String residentType, int aadharNumber, String panNumber) {
 		super();
 		this.userId = userId;
 		this.firstName = firstName;
@@ -133,13 +133,13 @@ public class UserDetail {
 	}
 
 
-	public LocalDate getDob() 
+	public String getDob() 
 	{
 		return dob;
 	}
 
 
-	public void setDob(LocalDate dob) 
+	public void setDob(String dob) 
 	{
 		this.dob = dob;
 	}
