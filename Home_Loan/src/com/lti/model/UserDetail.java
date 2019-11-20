@@ -10,8 +10,10 @@ import javax.persistence.Id;
 @Entity
 public class UserDetail {
 	
-	@Id @GeneratedValue
+	@Id 
+	@GeneratedValue
 	private String userId;
+
 	private String firstName;
 	private String middleName;
 	private String lastName;
@@ -23,6 +25,8 @@ public class UserDetail {
 	private String residentType;
 	private int aadharNumber;
 	private String panNumber; 
+	
+	
 	
 	
 	public UserDetail() 
