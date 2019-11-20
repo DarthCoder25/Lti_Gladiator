@@ -15,6 +15,8 @@ public class UserDetail {
 	private LocalDate dob;
 	private String gender;
 	private String residentType;
+	private String aadharNumber;
+	private String panNumber; 
 	
 	
 	public UserDetail() 
@@ -24,7 +26,7 @@ public class UserDetail {
 
 
 	public UserDetail(String userId, String firstName, String middleName, String lastName, String emailId,
-			String password, String phoneno, LocalDate dob, String gender, String residentType) {
+			String password, String phoneno, LocalDate dob, String gender, String residentType, String aadharNumber, String panNumber) {
 		super();
 		this.userId = userId;
 		this.firstName = firstName;
@@ -36,6 +38,8 @@ public class UserDetail {
 		this.dob = dob;
 		this.gender = gender;
 		this.residentType = residentType;
+		this.aadharNumber = aadharNumber;
+		this.panNumber = panNumber;
 	}
 
 
@@ -157,16 +161,39 @@ public class UserDetail {
 	{
 		this.residentType = residentType;
 	}
+	
+
+
+	public String getAadharNumber() {
+		return aadharNumber;
+	}
+
+
+	public void setAadharNumber(String aadharNumber) {
+		this.aadharNumber = aadharNumber;
+	}
+
+
+	public String getPanNumber() {
+		return panNumber;
+	}
+
+
+	public void setPanNumber(String panNumber) {
+		this.panNumber = panNumber;
+	}
 
 
 	@Override
-	public String toString() 
-	{
+	public String toString() {
 		return "UserDetail [userId=" + userId + ", firstName=" + firstName + ", middleName=" + middleName
 				+ ", lastName=" + lastName + ", emailId=" + emailId + ", password=" + password + ", phoneno=" + phoneno
-				+ ", dob=" + dob + ", gender=" + gender + ", residentType=" + residentType + ", getClass()="
-				+ getClass() + ", hashCode()=" + hashCode() + ", toString()=" + super.toString() + "]";
+				+ ", dob=" + dob + ", gender=" + gender + ", residentType=" + residentType + ", aadharNumber="
+				+ aadharNumber + ", panNumber=" + panNumber + ", getClass()=" + getClass() + ", hashCode()="
+				+ hashCode() + ", toString()=" + super.toString() + "]";
 	}
+
+
 	
 	
 	
